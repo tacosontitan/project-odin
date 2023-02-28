@@ -1,0 +1,8 @@
+<ul class="left-nav">
+    <li  *ngFor="let menuItem of menuItems">
+        <a [routerLink]="menuItem.route" routerLinkActive="active">
+            <img [src]="menuItem.iconUrl" alt="icon" />
+            {{menuItem.title}}
+        </a>
+    </li>
+</ul>

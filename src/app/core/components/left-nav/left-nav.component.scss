@@ -1,0 +1,36 @@
+.left-nav {
+    background: rgb(251,224,89);
+    background: linear-gradient(177deg, rgba(251,224,89,1) 0%, rgba(255,198,31,1) 100%);
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+        padding: 10px;
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.25);
+            &:first-child {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            &:last-child {
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+        &:not(:last-child) {
+            border-bottom: 1px solid #333;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+        }
+    }
+}
