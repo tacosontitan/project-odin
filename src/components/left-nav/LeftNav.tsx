@@ -4,7 +4,15 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { CardHeader } from '@mui/material';
 
+/**
+ * Defines the common left navigation component.
+ */
 class LeftNav extends React.Component {
+    /**
+     * Renders the left navigation component.
+     * @returns The left navigation component.
+     * @override
+     */
     override render() {
         return (
             <div className="left-nav bg-lush">
