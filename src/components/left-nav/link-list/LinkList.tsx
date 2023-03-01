@@ -2,6 +2,7 @@ import React from 'react';
 import { LineChartOutlined, ThunderboltOutlined, MessageOutlined, SettingOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
+import './LinkList.scss';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -27,7 +28,7 @@ class LinkList extends React.Component {
      */
     override render() {
         return (
-            <Menu
+            <Menu className="link-list"
                 mode="vertical"
                 items={this.items}
             />
