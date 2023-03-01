@@ -1,6 +1,5 @@
 {
   "recommendations": [
-    "angular.ng-template",
     "christian-kohler.npm-intellisense",
     "ecmel.vscode-html-css",
     "eg2.vscode-npm-script",
