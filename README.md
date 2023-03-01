@@ -14,7 +14,7 @@ Currently, the project is under a codename of "Project Odin" and is in the early
 
 ### ✅ Small changes, continuously integrated
 
-Glitter employs workflows for continuous integration to ensure the repository is held to industry standards; here's the current state of those workflows:
+Project Odin employs workflows for continuous integration to ensure the repository is held to industry standards; here's the current state of those workflows:
 
 ![.NET Workflow](https://img.shields.io/github/actions/workflow/status/tacosontitan/project-odin/build.yml?label=Build&logo=react&style=for-the-badge)
 
