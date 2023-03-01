@@ -5,11 +5,6 @@ import Stack from '@mui/material/Stack';
 import { CardHeader } from '@mui/material';
 
 class LeftNav extends React.Component {
-    seed: number;
-    constructor(props: any) {
-        super(props);
-        this.seed = Math.floor(Math.random() * 9999);
-    }
     override render() {
         return (
             <div className="left-nav bg-lush">
@@ -18,7 +13,7 @@ class LeftNav extends React.Component {
                         avatar={
                             <Avatar
                                 alt="Hazel"
-                                src={`https://picsum.photos/200?random=${this.seed}`}
+                                src={`https://picsum.photos/200?random=${Math.floor(Math.random() * 9999)}`}
                             />
                         }
                         title="Hazel"
