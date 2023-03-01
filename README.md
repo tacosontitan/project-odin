@@ -1,8 +1,8 @@
 # ⚡ Project Odin
 
-This project is a simple but effective web application for streamlining the development process when working within a team environment. It is designed to be a one-stop-shop for all of your project management needs.
+Project Odin is a simple but effective web application for streamlining the development process when working within a team environment. It is designed to be a one-stop-shop for all of your project management needs.
 
-Currently, the project is under a codename of "Project Odin" and is in the early stages of development.
+Currently, the project is under a codename and is in the early stages of development.
 
 ![License](https://img.shields.io/github/license/tacosontitan/project-odin?logo=github&style=for-the-badge)
 
