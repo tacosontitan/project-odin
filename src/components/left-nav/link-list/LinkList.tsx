@@ -1,22 +1,23 @@
 import React from 'react';
-import Avatar from '@mui/material/Avatar';
-import { CardHeader, Divider, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
-import { LeftNavLink } from './LeftNavLink';
+import { LineChartOutlined, ThunderboltOutlined, MessageOutlined, SettingOutlined } from '@ant-design/icons';
+import type { MenuProps } from 'antd';
+import { Menu } from 'antd';
+
+type MenuItem = Required<MenuProps>['items'][number];
 
 /**
  * Defines the user card component.
  */
 class LinkList extends React.Component {
-    links: LeftNavLink[];
+    items: MenuItem[];
     constructor() {
         let props = {};
         super(props);
-
-        let picsum = "https://picsum.photos/200?random="
-        this.links = [
-            new LeftNavLink('Dashboard', picsum + Math.floor(Math.random() * 9999), 'dashboard'),
-            new LeftNavLink('Workflows', picsum + Math.floor(Math.random() * 9999), 'workflows'),
-            new LeftNavLink('Chat', picsum + Math.floor(Math.random() * 9999), 'chat'),
+        this.items = [
+            this.getItem('Dashboard', 'dashboard', <LineChartOutlined />),
+            this.getItem('Workflows', 'workflows', <ThunderboltOutlined />),
+            this.getItem('Chat', 'chat', <MessageOutlined />),
+            this.getItem('Settings', 'settings', <SettingOutlined />)
         ];
     }
     /**
@@ -26,14 +27,26 @@ class LinkList extends React.Component {
      */
     override render() {
         return (
-            <List component="nav" aria-label="application links">
-                {this.links.map((link, index) => (
-                    <ListItem key={index} button>
-                        <ListItemText primary={link.name} />
-                    </ListItem>
-                ))}
-            </List>
+            <Menu
+                mode="vertical"
+                items={this.items}
+            />
         );
+    }
+    private getItem(
+        label: React.ReactNode,
+        key: React.Key,
+        icon?: React.ReactNode,
+        children?: MenuItem[],
+        type?: 'group',
+    ): MenuItem {
+        return {
+            key,
+            icon,
+            children,
+            label,
+            type,
+        } as MenuItem;
     }
 }
 
