@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-lush {
+  background: #56ab2f;
+  background: -webkit-linear-gradient(to bottom left, #a8e063, #56ab2f);
+  background: linear-gradient(to bottom left, #a8e063, #56ab2f);
+}
