@@ -44,3 +44,24 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.  
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+## References
+
+During the early phases of the project, the following references should prove useful:
+
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Material UI](https://material-ui.com/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [React Folder Structure](https://blog.webdevsimplified.com/2022-07/react-folder-structure/)
+
+For testing, we're evaluating the following options:
+
+- [Cypress](https://www.cypress.io/)
+- [Selenium](https://www.selenium.dev/)
+- [Puppeteer](https://pptr.dev/)
+- [TestCafe](https://devexpress.github.io/testcafe/)
+- [Playwright](https://playwright.dev/)
+- [Nightwatch](https://nightwatchjs.org/)
+- [WebdriverIO](https://webdriver.io/)
+- [Testim](https://testim.io/)
