@@ -1,8 +1,6 @@
 import React from 'react';
 import './UserCard.scss';
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
-import { CardHeader } from '@mui/material';
+import { Avatar, Space } from 'antd';
 
 /**
  * Defines the user card component.
@@ -15,17 +13,12 @@ class UserCard extends React.Component {
      */
     override render() {
         return (
-            <Stack className="user-stack" direction="row" spacing={1}>
-                <CardHeader className="user-card"
-                    avatar={
-                        <Avatar
-                            alt="Hazel"
-                            src={`https://picsum.photos/200?random=${Math.floor(Math.random() * 9999)}`}
-                        />
-                    }
-                    title="Hazel"
-                />
-            </Stack>
+            <Space className="user-card" wrap size={16}>
+                <Avatar size="large" src={`https://picsum.photos/200?random=${Math.floor(Math.random() * 9999)}`}>
+                    H
+                </Avatar>
+                <h4>Hazel</h4>
+            </Space>
         );
     }
 }
