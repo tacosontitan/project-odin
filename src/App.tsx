@@ -1,9 +1,11 @@
 import './App.scss';
-import LeftNav from './components/left-nav/LeftNav';
+import DashboardLayout from './components/layouts/DashboardLayout';
 
 function App() {
   return (
-    <LeftNav />
+    <DashboardLayout>
+      <span>Pong!</span>
+    </DashboardLayout>
   );
 }
 
