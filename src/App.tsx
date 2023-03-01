@@ -1,8 +1,9 @@
 import './App.scss';
+import LeftNav from './components/left-nav/LeftNav';
 
 function App() {
   return (
-    <h1>Hello, world!</h1>
+    <LeftNav />
   );
 }
 
