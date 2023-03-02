@@ -14,10 +14,10 @@ class LinkList extends React.Component {
     constructor() {
         super({});
         this.items = [
-            this.getItem('Dashboard', 'dashboard', <LineChartOutlined />),
-            this.getItem('Workflows', 'workflows', <ThunderboltOutlined />),
-            this.getItem('Chat', 'chat', <MessageOutlined />),
-            this.getItem('Settings', 'settings', <SettingOutlined />)
+            this.getItem(<a href="/dashboard">Dashboard</a>, 'dashboard', <LineChartOutlined />),
+            this.getItem(<a href="/workflows">Workflows</a>, 'workflows', <ThunderboltOutlined />),
+            this.getItem(<a href="/chat">Chat</a>, 'chat', <MessageOutlined />),
+            this.getItem(<a href="/settings">Settings</a>, 'settings', <SettingOutlined />)
         ];
     }
     /**
