@@ -49,9 +49,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 During the early phases of the project, the following references should prove useful:
 
+- [Ant Design](https://ant.design/)
 - [React](https://reactjs.org/)
 - [React Router](https://reactrouter.com/)
-- [Material UI](https://material-ui.com/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [React Folder Structure](https://blog.webdevsimplified.com/2022-07/react-folder-structure/)
 
