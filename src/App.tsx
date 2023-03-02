@@ -1,6 +1,10 @@
 import { ConfigProvider } from 'antd';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.scss';
-import DashboardLayout from './components/layouts/DashboardLayout';
+import Chat from './pages/chat/Chat';
+import Dashboard from './pages/dashboard/Dashboard';
+import Settings from './pages/settings/Settings';
+import Workflows from './pages/workflows/Workflows';
 
 function App() {
   return (
@@ -18,9 +22,13 @@ function App() {
         },
       }}
     >
-      <DashboardLayout>
-        <span>Pong!</span>
-      </DashboardLayout>
+      <Routes>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/workflows" element={<Workflows />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/" element={<Navigate to="/dashboard" />} />
+       </Routes>
     </ConfigProvider>
   );
 }
