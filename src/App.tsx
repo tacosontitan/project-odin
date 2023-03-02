@@ -19,7 +19,8 @@ function App() {
           colorWarning: '#FFED75',
           colorSuccess: '#BAF2B1',
           colorInfo: '#97ECFF',
-          colorTextBase: '#FFF8E8'
+          colorTextBase: '#FFF8E8',
+          colorBgTextHover: 'rgba(0, 0, 0, 0.25)'
         },
       }}
     >
