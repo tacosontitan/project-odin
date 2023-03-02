@@ -20,7 +20,8 @@ function App() {
           colorSuccess: '#BAF2B1',
           colorInfo: '#97ECFF',
           colorTextBase: '#FFF8E8',
-          colorBgTextHover: 'rgba(0, 0, 0, 0.25)'
+          colorBgTextHover: 'rgba(0, 0, 0, 0.25)',
+          colorPrimaryBg: '', //Might not be the best way to disable the PrimaryBG colour, but it works
         },
       }}
     >
