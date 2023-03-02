@@ -3,6 +3,7 @@ import { LineChartOutlined, ThunderboltOutlined, MessageOutlined, SettingOutline
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 import './LinkList.scss';
+import { Link } from 'react-router-dom';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -14,10 +15,10 @@ class LinkList extends React.Component {
     constructor() {
         super({});
         this.items = [
-            this.getItem(<a href="/dashboard">Dashboard</a>, 'dashboard', <LineChartOutlined />),
-            this.getItem(<a href="/workflows">Workflows</a>, 'workflows', <ThunderboltOutlined />),
-            this.getItem(<a href="/chat">Chat</a>, 'chat', <MessageOutlined />),
-            this.getItem(<a href="/settings">Settings</a>, 'settings', <SettingOutlined />)
+            this.getItem(<Link to="/dashboard">Dashboard</Link>, 'dashboard', <LineChartOutlined />),
+            this.getItem(<Link to="/workflows">Workflows</Link>, 'workflows', <ThunderboltOutlined />),
+            this.getItem(<Link to="/chat">Chat</Link>, 'chat', <MessageOutlined />),
+            this.getItem(<Link to="/settings">Settings</Link>, 'settings', <SettingOutlined />)
         ];
     }
     /**
