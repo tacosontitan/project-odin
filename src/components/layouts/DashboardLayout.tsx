@@ -2,13 +2,15 @@ import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 import { theme } from 'antd';
 import Layout, { Content, Header } from 'antd/es/layout/layout';
 import Sider from 'antd/es/layout/Sider';
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import AppContext from '../../AppContext';
 import LeftNav from '../left-nav/LeftNav';
 import './DashboardLayout.scss'
 import { DashboardLayoutProps } from './DashboardLayoutProps';
 
 const DashboardLayout: React.FunctionComponent<DashboardLayoutProps> = (props: DashboardLayoutProps) => {
-    const [collapsed, setCollapsed] = useState(false);
+    const {collapsed} = useContext(AppContext);
+    const {toggleCollapsed} = useContext(AppContext);
     const {
         token: { colorBgContainer },
     } = theme.useToken();
@@ -22,7 +24,7 @@ const DashboardLayout: React.FunctionComponent<DashboardLayoutProps> = (props: D
                 <Header style={{ padding: 0, paddingLeft: 20, background: colorBgContainer }}>
                     {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
                         className: 'trigger',
-                        onClick: () => setCollapsed(!collapsed),
+                        onClick: toggleCollapsed,
                     })}
                 </Header>
                 <Content
