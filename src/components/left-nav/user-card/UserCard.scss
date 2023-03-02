@@ -3,6 +3,10 @@
     width: 100%;
     border-bottom: 1px solid #333;
 
+    &.collapsed {
+        padding-left: 20px !important;
+    }
+
     .user-card * {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.25rem;

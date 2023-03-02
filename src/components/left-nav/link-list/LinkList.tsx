@@ -12,8 +12,7 @@ type MenuItem = Required<MenuProps>['items'][number];
 class LinkList extends React.Component {
     items: MenuItem[];
     constructor() {
-        let props = {};
-        super(props);
+        super({});
         this.items = [
             this.getItem('Dashboard', 'dashboard', <LineChartOutlined />),
             this.getItem('Workflows', 'workflows', <ThunderboltOutlined />),

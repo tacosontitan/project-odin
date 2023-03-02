@@ -1,26 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './UserCard.scss';
 import { Avatar, Space } from 'antd';
+import { UserCardProps } from './UserCardProps';
 
 /**
  * Defines the user card component.
  */
-class UserCard extends React.Component {
-    /**
-     * Renders the user card component.
-     * @returns The user card component.
-     * @override
-     */
-    override render() {
-        return (
-            <Space className="user-card" wrap size={16}>
-                <Avatar size="large" src={`https://picsum.photos/200?random=${Math.floor(Math.random() * 9999)}`}>
-                    H
-                </Avatar>
-                <h4>Hazel</h4>
-            </Space>
-        );
-    }
+const UserCard: React.FunctionComponent<UserCardProps> = (props: UserCardProps) => {
+    return <>
+        <Space className={props.collapsed ? "user-card collapsed" : "user-card"} wrap size={16}>
+            <Avatar size="large" src="https://avatars.githubusercontent.com/u/65432314?v=4">
+                H
+            </Avatar>
+            {props.collapsed ? null : <h4>Hazel</h4>}
+        </Space>
+    </>
 }
 
 export default UserCard;
