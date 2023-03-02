@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './UserCard.scss';
 import { Avatar, Space } from 'antd';
 import { UserCardProps } from './UserCardProps';
