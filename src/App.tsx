@@ -1,6 +1,7 @@
 import { ConfigProvider } from 'antd';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.scss';
+import { AppContextProvider } from './AppContext';
 import Chat from './pages/chat/Chat';
 import Dashboard from './pages/dashboard/Dashboard';
 import Settings from './pages/settings/Settings';
@@ -22,6 +23,7 @@ function App() {
         },
       }}
     >
+      <AppContextProvider>
       <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/workflows" element={<Workflows />} />
@@ -29,6 +31,7 @@ function App() {
           <Route path="/settings" element={<Settings />} />
           <Route path="/" element={<Navigate to="/dashboard" />} />
        </Routes>
+       </AppContextProvider>
     </ConfigProvider>
   );
 }
