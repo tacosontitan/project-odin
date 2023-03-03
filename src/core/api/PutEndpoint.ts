@@ -1,7 +1,7 @@
 import { ApiEndpoint } from "./ApiEndpoint";
 
 /**
- * Represents an ApiEndpoint with a GET method.
+ * Represents an ApiEndpoint with a PUT method.
  * @extends ApiEndpoint
  */
 export class GetEndpoint extends ApiEndpoint {
