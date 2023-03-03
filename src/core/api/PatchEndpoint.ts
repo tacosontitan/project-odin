@@ -1,4 +1,4 @@
-import { ApiEndpoint } from "./ApiEndpoint";
+import { ApiEndpoint } from "./ApiRequest";
 
 /**
  * Represents an ApiEndpoint with a PATCH method.
