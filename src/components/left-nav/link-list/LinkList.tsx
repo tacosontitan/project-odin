@@ -4,37 +4,44 @@ import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 import './LinkList.scss';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import AppContext from '../../../AppContext';
+import { LinkListProps } from './LinkListProps';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
 /**
  * Defines the user card component.
  */
-class LinkList extends React.Component {
-    items: MenuItem[];
-    constructor() {
-        super({});
-        this.items = [
-            this.getItem(<Link to="/dashboard">Dashboard</Link>, 'dashboard', <LineChartOutlined />),
-            this.getItem(<Link to="/workflows">Workflows</Link>, 'workflows', <ThunderboltOutlined />),
-            this.getItem(<Link to="/chat">Chat</Link>, 'chat', <MessageOutlined />),
-            this.getItem(<Link to="/settings">Settings</Link>, 'settings', <SettingOutlined />)
+const LinkList: React.FunctionComponent<LinkListProps> = (props: LinkListProps) => {
+    const {selectedMenuItem} = useContext(AppContext);
+    const {setSelectedMenuItem} = useContext(AppContext);
+    const items: MenuItem[] = [
+        getItem(<Link onClick={() => setSelectedMenuItem('dashboard')} to="/dashboard">Dashboard</Link>,
+                'dashboard', <LineChartOutlined />),
+        getItem(<Link onClick={() => setSelectedMenuItem('workflows')} to="/workflows">Workflows</Link>,
+                'workflows', <ThunderboltOutlined />),
+        getItem(<Link onClick={() => setSelectedMenuItem('chat')} to="/chat">Chat</Link>,
+                'chat', <MessageOutlined />),
+        getItem(<Link onClick={() => setSelectedMenuItem('settings')} to="/settings">Settings</Link>,
+                'settings', <SettingOutlined />)
         ];
-    }
+        
     /**
      * Renders the user card component.
      * @returns The user card component.
      * @override
      */
-    override render() {
+    
+        
         return (
             <Menu className="link-list"
                 mode="vertical"
-                items={this.items}
+                items={items}
+                defaultSelectedKeys={[selectedMenuItem]}
             />
         );
-    }
-    private getItem(
+     function getItem(
         label: React.ReactNode,
         key: React.Key,
         icon?: React.ReactNode,
