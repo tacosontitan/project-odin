@@ -11,7 +11,7 @@ const LeftNav: React.FunctionComponent<LeftNavProps> = (props: LeftNavProps) => 
     return <>
         <div className="left-nav bg-primary-gradient">
             <UserCard collapsed={props.collapsed} />
-            <LinkList />
+            <LinkList> </LinkList>
         </div>
     </>
 }
