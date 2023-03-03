@@ -4,7 +4,7 @@ import { ApiEndpoint } from "./ApiEndpoint";
  * Represents an ApiEndpoint with a PUT method.
  * @extends ApiEndpoint
  */
-export class GetEndpoint extends ApiEndpoint {
+export class PutEndpoint extends ApiEndpoint {
         /**
      * Creates a new ApiEndpoint instance.
      * @param url The URL of the endpoint.
