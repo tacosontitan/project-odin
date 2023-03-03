@@ -1,12 +1,12 @@
-import { ApiEndpoint } from "./ApiRequest";
+import { ApiRequest } from "./ApiRequest";
 
 /**
- * Represents an ApiEndpoint with a DELETE method.
- * @extends ApiEndpoint
+ * Represents an ApiRequest with a DELETE method.
+ * @extends ApiRequest
  */
-export class DeleteEndpoint extends ApiEndpoint {
+export class ApiDeleteRequest extends ApiRequest {
         /**
-     * Creates a new ApiEndpoint instance.
+     * Creates a new ApiRequest instance.
      * @param url The URL of the endpoint.
      * @param headers The headers of the endpoint.
      * @param body The body of the endpoint.

@@ -1,12 +1,12 @@
-import { ApiEndpoint } from "./ApiRequest";
+import { ApiRequest } from "./ApiRequest";
 
 /**
- * Represents an ApiEndpoint with a PATCH method.
- * @extends ApiEndpoint
+ * Represents an ApiRequest with a PATCH method.
+ * @extends ApiRequest
  */
-export class PatchEndpoint extends ApiEndpoint {
+export class ApiPatchRequest extends ApiRequest {
         /**
-     * Creates a new ApiEndpoint instance.
+     * Creates a new ApiRequest instance.
      * @param url The URL of the endpoint.
      * @param headers The headers of the endpoint.
      * @param body The body of the endpoint.

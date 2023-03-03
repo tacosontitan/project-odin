@@ -1,9 +1,9 @@
 /**
- * Represents a single API endpoint.
+ * Represents a single API request.
  */
-export class ApiEndpoint {
+export class ApiRequest {
     /**
-     * Creates a new ApiEndpoint instance.
+     * Creates a new ApiRequest instance.
      * @param url The URL of the endpoint.
      * @param method The HTTP method of the endpoint.
      * @param headers The headers of the endpoint.
