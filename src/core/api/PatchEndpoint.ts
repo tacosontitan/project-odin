@@ -4,7 +4,7 @@ import { ApiEndpoint } from "./ApiEndpoint";
  * Represents an ApiEndpoint with a PATCH method.
  * @extends ApiEndpoint
  */
-export class GetEndpoint extends ApiEndpoint {
+export class PatchEndpoint extends ApiEndpoint {
         /**
      * Creates a new ApiEndpoint instance.
      * @param url The URL of the endpoint.
