@@ -11,7 +11,7 @@ export class WorkflowDataModel {
         public name: string,
         public description: string,
         public color: string,
-        public icon: string,
+        public icon: React.FC,
     ){
         this.id = crypto.randomUUID();
         this.name = name;
