@@ -1,4 +1,4 @@
-export class WorkflowDataModel {
+export class Workflow {
     /**
     @param id The id of the workflow, a 36 character long v4 UUID.
     @param name The name of the workflow.
@@ -12,7 +12,7 @@ export class WorkflowDataModel {
         public description: string,
         public color: string,
         public icon: string,
-    ){
+    ) {
         this.id = crypto.randomUUID();
         this.name = name;
         this.description = description;
