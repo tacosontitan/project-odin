@@ -7,7 +7,8 @@ function Workflows() {
     return (
         <DashboardLayout>
             <span>Let's automate things!</span>
-            <WorkflowUnit workflow={new WorkflowDataModel("A name for a workflow", "A very good description", "#FF0000", UpCircleOutlined)}></WorkflowUnit>
+            <WorkflowUnit workflow={new WorkflowDataModel("A name for a workflow",
+             "A very good description", "#FF0000", UpCircleOutlined)}></WorkflowUnit>
         </DashboardLayout>
     );
 }

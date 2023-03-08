@@ -1,0 +1,49 @@
+$borderRadius: 7px;
+$workflow-color: green;
+:root{
+    --h: hue-rotate(0deg);
+    --workflow-color: hsl(0, 100%, 95%);
+}
+
+button{
+    border-radius: $borderRadius;
+    padding: 0px;
+}
+
+.workflow-unit{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.workflow-unit-icon{
+    font-size: 4rem;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--workflow-color);
+    border-top-right-radius: $borderRadius - 1px;
+    border-top-left-radius: $borderRadius - 1px;
+}
+
+.workflow-unit-name{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0.5em;
+    border-bottom-right-radius: $borderRadius - 1px;
+    border-bottom-left-radius: $borderRadius - 1px;
+}
+
+h3{
+    margin: 0;
+}
+
+hr{
+    border: 1.5px solid black;
+    margin: 0;
+}
