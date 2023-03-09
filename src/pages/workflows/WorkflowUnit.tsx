@@ -9,7 +9,7 @@ const WorkflowUnit: React.FC<WorkflowUnitProps> = (props: WorkflowUnitProps) => 
     return (
         <div className="workflow-unit">
             <button>
-                <div className="workflow-unit-icon" style={{color: props.workflow.color}}>
+                <div className={"workflow-unit-icon "+props.workflow.color} >
                     {icon}
                 </div>
                 <div className="workflow-unit-name">

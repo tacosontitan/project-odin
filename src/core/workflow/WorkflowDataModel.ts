@@ -16,7 +16,7 @@ export class WorkflowDataModel {
         this.id = crypto.randomUUID();
         this.name = name;
         this.description = description;
-        this.color = color;
+        this.color = "color-"+color;
         this.icon = icon;
     }
 
