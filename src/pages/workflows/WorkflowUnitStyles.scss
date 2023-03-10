@@ -16,7 +16,7 @@ $workflow-lightness: 80% !default;
 }
 
 .color-antiquewhite{
-    $workflow-color: darken(antiquewhite, 1%);
+    $workflow-color: darken(antiquewhite, 4%);
     $workflow-lightness: 97%;
     @include workflow-color-style($workflow-color, $workflow-lightness);
 }
@@ -869,11 +869,6 @@ button{
     flex-direction: column;
     border-top-right-radius: $borderRadius - 1px;
     border-top-left-radius: $borderRadius - 1px;
-}
-
-.workflow-unit-icon{
-    color: $workflow-color;
-    background-color: change-color($color: $workflow-color, $lightness: $workflow-lightness)
 }
 
 .workflow-unit-name{
