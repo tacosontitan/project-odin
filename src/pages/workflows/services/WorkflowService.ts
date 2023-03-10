@@ -1,5 +1,5 @@
 import { Workflow } from "../models/Workflow";
-
+import * as icons from '@ant-design/icons/lib/icons';
 /**
  * Represents a service for managing workflows.
  */
@@ -11,8 +11,8 @@ export class WorkflowService {
      */
     public get(userId: string | null = null): Workflow[] {
         return [
-            new Workflow("Test", "Test", "green", "coffee"),
-            new Workflow("Test 2", "Test 2", "red", "cloud-upload"),
+            new Workflow("Test", "Test", "green", icons.CoffeeOutlined),
+            new Workflow("Test 2", "Test 2", "red", icons.CloudUploadOutlined),
         ];
     }
 }
