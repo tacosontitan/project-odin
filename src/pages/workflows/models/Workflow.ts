@@ -11,12 +11,12 @@ export class Workflow {
         public name: string,
         public description: string,
         public color: string,
-        public icon: string,
+        public icon: React.FC,
     ) {
         this.id = crypto.randomUUID();
         this.name = name;
         this.description = description;
-        this.color = color;
+        this.color = "color-"+color;
         this.icon = icon;
     }
 

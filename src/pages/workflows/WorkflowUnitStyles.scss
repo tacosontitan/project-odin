@@ -1,0 +1,889 @@
+$borderRadius: 7px;
+$workflow-color: black !default;
+$workflow-lightness: 80% !default;
+
+@mixin workflow-color-style($color, $luminance){
+    &.workflow-unit-icon{
+        color: $color;
+        background-color: change-color($color: $color, $lightness: $luminance);
+    }
+}
+
+.color-aliceblue{
+    $workflow-color: aliceblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-antiquewhite{
+    $workflow-color: darken(antiquewhite, 4%);
+    $workflow-lightness: 97%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-aqua{
+    $workflow-color: aqua;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-aquamarine{
+    $workflow-color: darken(aquamarine, 1%);
+    $workflow-lightness: 91%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-azure{
+    $workflow-color: azure;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-beige{
+    $workflow-color: darken(beige, 4%);
+    $workflow-lightness: 97%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-bisque{
+    $workflow-color: bisque;
+    $workflow-lightness: 96%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-black{
+    $workflow-color: black;
+    $workflow-lightness: 85%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-blanchedalmond{
+    $workflow-color: darken(blanchedalmond, 5%);
+    $workflow-lightness: 96%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-blue{
+    $workflow-color: blue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-blueviolet{
+    $workflow-color: blueviolet;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-brown{
+    $workflow-color: brown;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-burlywood{
+    $workflow-color: burlywood;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-cadetblue{
+    $workflow-color: cadetblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-chartreuse{
+    $workflow-color: chartreuse;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-chocolate{
+    $workflow-color: chocolate;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-coral{
+    $workflow-color: coral;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-cornflowerblue{
+    $workflow-color: cornflowerblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-cornsilk{
+    $workflow-color: darken(cornsilk, 15%);
+    $workflow-lightness: 92%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-crimson{
+    $workflow-color: crimson;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-cyan{
+    $workflow-color: cyan;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkblue{
+    $workflow-color: darkblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkcyan{
+    $workflow-color: darkcyan;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkgoldenrod{
+    $workflow-color: darkgoldenrod;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkgray{
+    $workflow-color: darkgray;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkgreen{
+    $workflow-color: darkgreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkkhaki{
+    $workflow-color: darkkhaki;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkmagenta{
+    $workflow-color: darkmagenta;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkolivegreen{
+    $workflow-color: darkolivegreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkorange{
+    $workflow-color: darkorange;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkorchid{
+    $workflow-color: darkorchid;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkred{
+    $workflow-color: darkred;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darksalmon{
+    $workflow-color: darksalmon;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkseagreen{
+    $workflow-color: darkseagreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkslateblue{
+    $workflow-color: darkslateblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkslategray{
+    $workflow-color: darkslategray;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkslategrey{
+    $workflow-color: darkslategrey;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkturquoise{
+    $workflow-color: darkturquoise;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-darkviolet{
+    $workflow-color: darkviolet;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-deeppink{
+    $workflow-color: deeppink;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-deepskyblue{
+    $workflow-color: deepskyblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-dimgray{
+    $workflow-color: dimgray;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-dodgerblue{
+    $workflow-color: dodgerblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-firebrick{
+    $workflow-color: firebrick;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-floralwhite{
+    $workflow-color: floralwhite;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-forestgreen{
+    $workflow-color: forestgreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-fuchsia{
+    $workflow-color: fuchsia;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-gainsboro{
+    $workflow-color: gainsboro;
+    $workflow-lightness: 96%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-ghostwhite{
+    $workflow-color: ghostwhite;
+    $workflow-lightness: 94%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-gold{
+    $workflow-color: gold;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-goldenrod{
+    $workflow-color: goldenrod;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-gray{
+    $workflow-color: gray;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-green{
+    $workflow-color: green;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-greenyellow{
+    $workflow-color: greenyellow;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-honeydew{
+    $workflow-color: honeydew;
+    $workflow-lightness: 87%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-hotpink{
+    $workflow-color: hotpink;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-indianred{
+    $workflow-color: indianred;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-indigo{
+    $workflow-color: indigo;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-khaki{
+    $workflow-color: darken(khaki, 2%);
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lavender{
+    $workflow-color: lavender;
+    $workflow-lightness: 89%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lavenderblush{
+    $workflow-color: lavenderblush;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lawngreen{
+    $workflow-color: lawngreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lemonchiffon{
+    $workflow-color: lighten(lemonchiffon, 4%);
+    $workflow-lightness: 78%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightblue{
+    $workflow-color: lightblue;
+    $workflow-lightness: 91%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightcoral{
+    $workflow-color: lightcoral;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightcyan{
+    $workflow-color: lighten(lightcyan, 3%);
+    $workflow-lightness: 87%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightgoldenrodyellow{
+    $workflow-color: lighten(lightgoldenrodyellow, 8%);
+    $workflow-lightness: 83%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightgray{
+    $workflow-color: darken(lightgray, 1%);
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightgreen{
+    $workflow-color: lightgreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightpink{
+    $workflow-color: lightpink;
+    $workflow-lightness: 95%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightsalmon{
+    $workflow-color: lightsalmon;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightseagreen{
+    $workflow-color: lightseagreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightskyblue{
+    $workflow-color: lightskyblue;
+    $workflow-lightness: 94%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightslategray{
+    $workflow-color: lightslategray;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lightsteelblue{
+    $workflow-color: lightsteelblue;
+    $workflow-lightness: 93%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-lime{
+    $workflow-color: lime;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-limegreen{
+    $workflow-color: limegreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-linen{
+    $workflow-color: lighten(linen, 3%);
+    $workflow-lightness: 88%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-magenta{
+    $workflow-color: magenta;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-maroon{
+    $workflow-color: maroon;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-mediumaquamarine{
+    $workflow-color: mediumaquamarine;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-mediumblue{
+    $workflow-color: mediumblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-mediumorchid{
+    $workflow-color: mediumorchid;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-mediumpurple{
+    $workflow-color: mediumpurple;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-mediumseagreen{
+    $workflow-color: mediumseagreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-mediumslateblue{
+    $workflow-color: mediumslateblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-mediumspringgreen{
+    $workflow-color: mediumspringgreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-mediumturquoise{
+    $workflow-color: mediumturquoise;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-mediumvioletred{
+    $workflow-color: mediumvioletred;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-midnightblue{
+    $workflow-color: midnightblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-mintcream{
+    $workflow-color: lighten(mintcream, 1%);
+    $workflow-lightness: 88%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-mistyrose{
+    $workflow-color: lighten(mistyrose, 3%);
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-moccasin{
+    $workflow-color: moccasin;
+    $workflow-lightness: 95%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-navajowhite{
+    $workflow-color: navajowhite;
+    $workflow-lightness: 94%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-navy{
+    $workflow-color: navy;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-oldlace{
+    $workflow-color: lighten(oldlace, 3%);
+    $workflow-lightness: 88%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-olive{
+    $workflow-color: olive;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-olivedrab{
+    $workflow-color: olivedrab;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-orange{
+    $workflow-color: orange;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-orangered{
+    $workflow-color: orangered;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-orchid{
+    $workflow-color: orchid;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-palegoldenrod{
+    $workflow-color: darken(palegoldenrod, 2%);
+    $workflow-lightness: 94%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-palegreen{
+    $workflow-color: palegreen;
+    $workflow-lightness: 93%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-paleturquoise{
+    $workflow-color: paleturquoise;
+    $workflow-lightness: 94%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-palevioletred{
+    $workflow-color: palevioletred;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-papayawhip{
+    $workflow-color: lighten(papayawhip, 6%);
+    $workflow-lightness: 88%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-peachpuff{
+    $workflow-color: darken(peachpuff, 1%);
+    $workflow-lightness: 94%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-peru{
+    $workflow-color: peru;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-pink{
+    $workflow-color: darken(pink, 1%);
+    $workflow-lightness: 95%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-plum{
+    $workflow-color: plum;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-powderblue{
+    $workflow-color: powderblue;
+    $workflow-lightness: 94%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-purple{
+    $workflow-color: purple;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-red{
+    $workflow-color: red;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-rosybrown{
+    $workflow-color: rosybrown;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-royalblue{
+    $workflow-color: royalblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-saddlebrown{
+    $workflow-color: saddlebrown;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-salmon{
+    $workflow-color: salmon;
+    $workflow-lightness: 91%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-sandybrown{
+    $workflow-color: sandybrown;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-seagreen{
+    $workflow-color: seagreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-seashell{
+    $workflow-color: lighten(seashell, 2%);
+    $workflow-lightness: 89%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-sienna{
+    $workflow-color: sienna;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-silver{
+    $workflow-color: darken(silver, 1%);
+    $workflow-lightness: 92%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-skyblue{
+    $workflow-color: skyblue;
+    $workflow-lightness: 91%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-slateblue{
+    $workflow-color: slateblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-slategray{
+    $workflow-color: slategray;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-snow{
+    $workflow-color: snow;
+    $workflow-lightness: 95%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-springgreen{
+    $workflow-color: springgreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-steelblue{
+    $workflow-color: steelblue;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-tan{
+    $workflow-color: tan;
+    $workflow-lightness: 91%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-teal{
+    $workflow-color: teal;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-thistle{
+    $workflow-color: thistle;
+    $workflow-lightness: 95%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-tomato{
+    $workflow-color: tomato;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-turquoise{
+    $workflow-color: turquoise;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-violet{
+    $workflow-color: violet;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-wheat{
+    $workflow-color: darken(wheat, 5%);
+    $workflow-lightness: 94%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-white{
+    $workflow-color: white;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-whitesmoke{
+    $workflow-color: lighten(whitesmoke, 1%);
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+.color-yellow{
+    $workflow-color: darken(yellow, 3%);
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+
+
+.color-yellowgreen{
+    $workflow-color: yellowgreen;
+    $workflow-lightness: 90%;
+    @include workflow-color-style($workflow-color, $workflow-lightness);
+}
+
+button{
+    border-radius: $borderRadius;
+    padding: 0px;
+    border: 2px solid lightslategray;
+}
+
+.workflow-unit{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.workflow-unit-icon{
+    font-size: 4rem;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-right-radius: $borderRadius - 1px;
+    border-top-left-radius: $borderRadius - 1px;
+}
+
+.workflow-unit-name{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0.5em;
+    border-bottom-right-radius: $borderRadius - 1px;
+    border-bottom-left-radius: $borderRadius - 1px;
+}
+
+h3{
+    margin: 0;
+}
+
+hr{
+    border: 1.5px solid black;
+    margin: 0;
+}
