@@ -1,5 +1,5 @@
-import { WorkflowDataModel } from "../../core/workflow/WorkflowDataModel";
+import { Workflow } from "./models/Workflow";
 
 export interface WorkflowUnitProps {
-    workflow: WorkflowDataModel,
+    workflow: Workflow,
 }
