@@ -1,5 +1,5 @@
 import { ConfigProvider } from 'antd';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import './App.scss';
 import { AppContextProvider } from './AppContext';
 import Chat from './pages/chat/Chat';
@@ -8,6 +8,7 @@ import Settings from './pages/settings/Settings';
 import Workflows from './pages/workflows/Workflows';
 
 function App() {
+  const location = useLocation().pathname.substring(1);
   return (
     <ConfigProvider
       theme={{
@@ -25,7 +26,7 @@ function App() {
         },
       }}
     >
-      <AppContextProvider>
+      <AppContextProvider location={location}>
       <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/workflows" element={<Workflows />} />

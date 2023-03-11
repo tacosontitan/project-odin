@@ -1,3 +1,7 @@
 export interface AppContextProps{
-    children: React.ReactNode;
+    /**
+     * @param location - The current path of the application
+     */
+    location: string,
+    children: React.ReactNode,
 }
