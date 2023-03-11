@@ -7,6 +7,10 @@ $workflow-lightness: 80% !default;
         color: $color;
         background-color: change-color($color: $color, $lightness: $luminance);
     }
+    &.scheduled-workflow-icon-and-name{
+        color: $color;
+        background-color: change-color($color: $color, $lightness: $luminance);
+    }
 }
 
 .color-aliceblue{
@@ -852,11 +856,7 @@ button{
 }
 
 .workflow-component{
-    text-align: center;
     display: inline-block;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin: 5px;
 }
 
@@ -883,10 +883,18 @@ button{
 }
 
 .workflow-command-component{
-    margin-bottom: 0;
     margin-top: auto;
 }
 
 span{
     margin: 0;
+}
+
+.scheduled-workflow-icon-and-name{
+    margin: 0;
+    padding: 0.25em;
+    border-top-right-radius: $borderRadius - 1px;
+    border-top-left-radius: $borderRadius - 1px;
+    font-size: 1rem;
+    font-weight: 600;
 }

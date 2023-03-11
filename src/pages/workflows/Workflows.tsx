@@ -3,6 +3,7 @@ import { Workflow } from './models/Workflow';
 import WorkflowUnit from './WorkflowUnit';
 import { WorkflowCommandBar } from './WorkflowCommandBar';
 import * as icons from '@ant-design/icons/lib/icons';
+import { ScheduledWorkflowBar } from './ScheduledWorkflowBar';
 
 function Workflows() {
     return (
@@ -21,6 +22,7 @@ function Workflows() {
              "A very good description", "pink", icons.CompassOutlined)}></WorkflowUnit>
             </div>
              <WorkflowCommandBar></WorkflowCommandBar>
+            <ScheduledWorkflowBar></ScheduledWorkflowBar>
         </DashboardLayout>
     );
 }
