@@ -33,6 +33,9 @@ const DashboardLayout: React.FunctionComponent<DashboardLayoutProps> = (props: D
                         padding: 24,
                         minHeight: 280,
                         background: colorBgContainer,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        flex: 1,
                     }}
                 >
                     {props.children}
