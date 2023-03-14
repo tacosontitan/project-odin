@@ -12,7 +12,7 @@ const AppContext = createContext(defaultContext);
 
 export function AppContextProvider( props: AppContextProps ){
 const [collapsed, setCollapsed] = useState(false);
-const [selectedMenuItem, setSelectedMenuItem] = useState('dashboard');
+const [selectedMenuItem, setSelectedMenuItem] = useState(props.location);
 
 function toggleCollapsed(){
     setCollapsed(!collapsed);

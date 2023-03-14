@@ -1,7 +1,7 @@
 import { WorkflowCommandProps, Command } from './WorkflowCommandProps';
 import { HistoryOutlined, SyncOutlined, PlusCircleOutlined} from '@ant-design/icons';
 import React from 'react';
-import './WorkflowComponentStyles.scss'
+import './WorkflowComponentStyles.scss';
 import './WorkflowCommandStyles.scss';
 
 export const WorkflowCommand: React.FC<WorkflowCommandProps> = (props: WorkflowCommandProps) => {

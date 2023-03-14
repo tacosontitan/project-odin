@@ -1,0 +1,12 @@
+.time-span{
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.scheduled-workflow-bar{
+    display: flex;
+    flex: 1 10 100%;
+    margin-bottom: 0;
+    overflow: auto hidden;
+    padding-top: 0.25rem;
+}
