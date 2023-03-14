@@ -8,6 +8,12 @@ export const WorkflowCommandBar: React.FC = () => {
         <div className='workflow-command-bar'>
             <WorkflowCommand command={Command.Create}></WorkflowCommand>
              <WorkflowCommand command={Command.Schedule}></WorkflowCommand>
+             <WorkflowCommand command={Command.Create}></WorkflowCommand>
+             <WorkflowCommand command={Command.Schedule}></WorkflowCommand>
+             <WorkflowCommand command={Command.Create}></WorkflowCommand>
+             <WorkflowCommand command={Command.Schedule}></WorkflowCommand>
+             <WorkflowCommand command={Command.Create}></WorkflowCommand>
+             <WorkflowCommand command={Command.Schedule}></WorkflowCommand>
         </div>
     );
 

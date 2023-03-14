@@ -9,20 +9,30 @@ function Workflows() {
     return (
         <DashboardLayout>
             <span>Let's automate things!</span>
-            <div>
-            <WorkflowUnit workflow={new Workflow("Workflow Name",
-             "A very good description", "indigo", icons.DashboardOutlined)}></WorkflowUnit>
-             <WorkflowUnit workflow={new Workflow("Workflow Name",
-             "A very good description", "lightcyan", icons.CloudDownloadOutlined)}></WorkflowUnit>
-             <WorkflowUnit workflow={new Workflow("Workflow Name",
-             "A very good description", "chocolate", icons.CloudServerOutlined)}></WorkflowUnit>
-             <WorkflowUnit workflow={new Workflow("Workflow Name",
-             "A very good description", "seagreen", icons.AmazonOutlined)}></WorkflowUnit>
-            <WorkflowUnit workflow={new Workflow("Workflow Name",
-             "A very good description", "pink", icons.CompassOutlined)}></WorkflowUnit>
+            <div style={{overflow: "auto", display: 'flex', flexFlow: 'column', flex: "auto"}}>
+                <div>
+                    <WorkflowUnit workflow={new Workflow("Workflow Name",
+                     "A very good description", "indigo", icons.DashboardOutlined)}></WorkflowUnit>
+                     <WorkflowUnit workflow={new Workflow("Workflow Name",
+                     "A very good description", "lightcyan", icons.CloudDownloadOutlined)}></WorkflowUnit>
+                     <WorkflowUnit workflow={new Workflow("Workflow Name",
+                     "A very good description", "chocolate", icons.CloudServerOutlined)}></WorkflowUnit>
+                     <WorkflowUnit workflow={new Workflow("Workflow Name",
+                     "A very good description", "seagreen", icons.AmazonOutlined)}></WorkflowUnit>
+                    <WorkflowUnit workflow={new Workflow("Workflow Name",
+                     "A very good description", "indigo", icons.DashboardOutlined)}></WorkflowUnit>
+                     <WorkflowUnit workflow={new Workflow("Workflow Name",
+                     "A very good description", "lightcyan", icons.CloudDownloadOutlined)}></WorkflowUnit>
+                     <WorkflowUnit workflow={new Workflow("Workflow Name",
+                     "A very good description", "chocolate", icons.CloudServerOutlined)}></WorkflowUnit>
+                     <WorkflowUnit workflow={new Workflow("Workflow Name",
+                     "A very good description", "seagreen", icons.AmazonOutlined)}></WorkflowUnit>
+                </div>
+                <div style={{marginTop: "auto"}}>
+                    <WorkflowCommandBar></WorkflowCommandBar>
+                    <ScheduledWorkflowBar></ScheduledWorkflowBar>
+                </div>
             </div>
-             <WorkflowCommandBar></WorkflowCommandBar>
-            <ScheduledWorkflowBar></ScheduledWorkflowBar>
         </DashboardLayout>
     );
 }
